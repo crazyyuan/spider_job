@@ -60,7 +60,8 @@ export default {
     };
   },
   async created() {
-    let response = await get_work_year();
+    // let response = await get_work_year();
+    let response = [{"count":67,"salary":6574.626865671642,"work_year":"\u5e94\u5c4a\u751f"},{"count":145,"salary":11437.931034482759,"work_year":"1\u5e74\u4ee5\u5185"},{"count":1229,"salary":12153.783563873067,"work_year":"1-3\u5e74"},{"count":198,"salary":13669.191919191919,"work_year":"\u7ecf\u9a8c\u4e0d\u9650"},{"count":1857,"salary":17946.149703823372,"work_year":"3-5\u5e74"},{"count":540,"salary":24825.925925925927,"work_year":"5-10\u5e74"},{"count":5,"salary":26400,"work_year":"10\u5e74\u4ee5\u4e0a"}];
     this.chartData.rows = response;
     this.salaryData.rows = response;
   }
